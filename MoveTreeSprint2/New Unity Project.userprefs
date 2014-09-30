@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Temporizador.cs">
+    <Files>
+      <File FileName="Assets\Scripts\GenerarFruta.cs" Line="13" Column="2" />
+      <File FileName="Assets\Scripts\Temporizador.cs" Line="35" Column="29" />
+      <File FileName="Assets\Scripts\Destructor.cs" Line="17" Column="97" />
+      <File FileName="Assets\Scripts\fruta.cs" Line="24" Column="1" />
+      <File FileName="Assets\Scripts\Puntuacion.cs" Line="25" Column="11" />
+      <File FileName="Assets\Scripts\FrutaVerde.cs" Line="24" Column="1" />
+      <File FileName="Assets\Scripts\FrutaDañada.cs" Line="23" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
