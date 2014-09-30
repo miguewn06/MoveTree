@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Temporizador.cs">
+    <Files>
+      <File FileName="Assets\Scripts\GenerarFruta.cs" Line="81" Column="18" />
+      <File FileName="..\..\..\Prueba_Shake2D\Assets\Scripts\AccelerometerInput.cs" Line="84" Column="3" />
+      <File FileName="Assets\Scripts\Temporizador.cs" Line="10" Column="24" />
+      <File FileName="Assets\Scripts\fruta.cs" Line="19" Column="3" />
+      <File FileName="Assets\Scripts\Puntuacion.cs" Line="18" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
