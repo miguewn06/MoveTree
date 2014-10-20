@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{8FF85DE1-C559-A934-4B38-4A9A2275C000}</ProjectGuid>
+	<ProjectGuid>{CC3EF95F-DC34-1822-696A-FF74682F6567}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AspectUtility.cs" />
      <Compile Include="Assets\Scripts\Destructor.cs" />
+     <Compile Include="Assets\Scripts\FrutaBeneficiosa.cs" />
      <Compile Include="Assets\Scripts\FrutaDañada.cs" />
      <Compile Include="Assets\Scripts\FrutaVerde.cs" />
      <Compile Include="Assets\Scripts\GenerarFruta.cs" />

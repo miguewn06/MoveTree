@@ -9,12 +9,15 @@ public class Temporizador : MonoBehaviour {
 	public float tiempomaximo= 10f;//valor de duracion del temporizador.
 	public int t=10;//valor entero de referencia. Solamente interesa que sea distinto de cero.
 	public bool inicio = false;
+	private int efecto=1;
 
 
 
 	// Use this for initialization
 	void Start () {
 		NotificationCenter.DefaultCenter ().AddObserver (this,"Iniciar");
+		NotificationCenter.DefaultCenter ().AddObserver (this, "realentizador");
+		StartCoroutine(contador (1));
 
 	}
 	
@@ -29,23 +32,62 @@ public class Temporizador : MonoBehaviour {
 
 	void FixedUpdate (){//esta funcion se actualiza una vez por segundo.
 		if(inicio){
-		contador ();//llamada a contador.
+		//contador ();//llamada a contador.
+		
 		}
 	}
 
-	void contador(){
-
-		if (t != 0) {//condicional para que el conteo termine al llegar a cero.
-						tiempomaximo = tiempomaximo - Time.deltaTime;// Time.deltaTime es un valor float que calcula el tiempo que pasa desde la ultima
-						//actualizacion de un frame.En este caso sera una vez por segundo debido al FixedUpdate.
-						t = Mathf.RoundToInt (tiempomaximo);//t es el entero de tiempomaximo.
-						tiempo.text = t.ToString ();//se actualiza el valor text del campo TextMesh en unity.
-		} else if (t == 0) {
-			GameObject[] terminar1 = GameObject.FindGameObjectsWithTag("Generador");
-			foreach (GameObject obj in terminar1){
-				UnityEngine.Object.Destroy(obj);
-			}
-		}
+	void realentizador(Notification n){
+		efecto = (int)n.data;
 
 	}
+	void retornar(){
+		efecto = 1;
+	}
+
+	IEnumerator contador(int num){
+		while (true) {
+						if (t != 0) {
+				num=efecto;
+				Debug.Log(num);
+				yield return new WaitForSeconds(num);
+				Invoke("retornar",5);
+
+
+
+								tiempomaximo = tiempomaximo - 1;
+								t = Mathf.RoundToInt (tiempomaximo);
+								tiempo.text = t.ToString ();
+
+
+				
+			} else if (t == 0) {
+								GameObject[] terminar1 = GameObject.FindGameObjectsWithTag ("Generador");
+								foreach (GameObject obj in terminar1) {
+										UnityEngine.Object.Destroy (obj);
+					yield return new WaitForSeconds(2);
+								NotificationCenter.DefaultCenter().PostNotification(this, "JuegoTerminado");
+								}
+						}
+
+
+			yield return new WaitForFixedUpdate();
+						
+				}
+	}
+//	void contador(){
+//
+//		if (t != 0) {//condicional para que el conteo termine al llegar a cero.
+//						tiempomaximo = tiempomaximo - Time.deltaTime;// Time.deltaTime es un valor float que calcula el tiempo que pasa desde la ultima
+//						//actualizacion de un frame.En este caso sera una vez por segundo debido al FixedUpdate.
+//						t = Mathf.RoundToInt (tiempomaximo);//t es el entero de tiempomaximo.
+//						tiempo.text = t.ToString ();//se actualiza el valor text del campo TextMesh en unity.
+//		} else if (t == 0) {
+//			GameObject[] terminar1 = GameObject.FindGameObjectsWithTag("Generador");
+//			foreach (GameObject obj in terminar1){
+//				UnityEngine.Object.Destroy(obj);
+//			}
+//		}
+//
+//	}
 }

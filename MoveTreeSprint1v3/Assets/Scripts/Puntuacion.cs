@@ -4,7 +4,7 @@ using System.Collections;
 public class Puntuacion : MonoBehaviour {
 
 	public TextMesh Puntaje;//toma el campo TextMesh del objeto Puntuacion en unity.
-	int puntaje= 0;//valor inicial del puntaje
+	public int puntaje= 0;//valor inicial del puntaje
 
 	// Use this for initialization
 	void Start () {

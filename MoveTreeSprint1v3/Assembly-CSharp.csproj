@@ -46,15 +46,48 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\FingerGestures Samples\1) Finger Events\Scripts\FingerEventsSamplePart1.cs" />
+     <Compile Include="Assets\FingerGestures Samples\1) Finger Events\Scripts\FingerEventsSamplePart2.cs" />
+     <Compile Include="Assets\FingerGestures Samples\2) Gestures\Scripts\BasicGesturesSample.cs" />
+     <Compile Include="Assets\FingerGestures Samples\2) Gestures\Scripts\PinchTwistSample.cs" />
+     <Compile Include="Assets\FingerGestures Samples\2) Gestures\Scripts\PointCloudGestureRenderer.cs" />
+     <Compile Include="Assets\FingerGestures Samples\2) Gestures\Scripts\PointCloudGestureSample.cs" />
+     <Compile Include="Assets\FingerGestures Samples\3) Toolbox\Scripts\DragTrail.cs" />
+     <Compile Include="Assets\FingerGestures Samples\3) Toolbox\Scripts\EmitParticlesOnSwipe.cs" />
+     <Compile Include="Assets\FingerGestures Samples\3) Toolbox\Scripts\ToolboxDragSample.cs" />
+     <Compile Include="Assets\FingerGestures Samples\3) Toolbox\Scripts\ToolboxFingerEventsSample.cs" />
+     <Compile Include="Assets\FingerGestures Samples\3) Toolbox\Scripts\ToolboxOneFingerGestureSample.cs" />
+     <Compile Include="Assets\FingerGestures Samples\Assets\Scripts\BasicSample.cs" />
+     <Compile Include="Assets\FingerGestures Samples\Assets\Scripts\EmitParticles.cs" />
+     <Compile Include="Assets\FingerGestures Samples\Assets\Scripts\MaxFPS.cs" />
+     <Compile Include="Assets\FingerGestures Samples\Assets\Scripts\MenuNode.cs" />
+     <Compile Include="Assets\FingerGestures Samples\Assets\Scripts\SampleBase.cs" />
+     <Compile Include="Assets\FingerGestures Samples\Assets\Scripts\SampleUI.cs" />
+     <Compile Include="Assets\FingerGestures Samples\Assets\Scripts\StartMenu.cs" />
+     <Compile Include="Assets\FingerGestures Samples\Assets\Scripts\SwipeParticlesEmitter.cs" />
      <Compile Include="Assets\Scripts\AspectUtility.cs" />
      <Compile Include="Assets\Scripts\Destructor.cs" />
+     <Compile Include="Assets\Scripts\Etapas.cs" />
+     <Compile Include="Assets\Scripts\FrutaBeneficiosa.cs" />
      <Compile Include="Assets\Scripts\FrutaDañada.cs" />
+     <Compile Include="Assets\Scripts\FrutaVenenosa.cs" />
      <Compile Include="Assets\Scripts\FrutaVerde.cs" />
+     <Compile Include="Assets\Scripts\GameOver.cs" />
      <Compile Include="Assets\Scripts\GenerarFruta.cs" />
+     <Compile Include="Assets\Scripts\Jugar.cs" />
+     <Compile Include="Assets\Scripts\NivelesNaranjas.cs" />
      <Compile Include="Assets\Scripts\NotificationCenter.cs" />
      <Compile Include="Assets\Scripts\Puntuacion.cs" />
+     <Compile Include="Assets\Scripts\Regresar.cs" />
+     <Compile Include="Assets\Scripts\Splash.cs" />
      <Compile Include="Assets\Scripts\Temporizador.cs" />
      <Compile Include="Assets\Scripts\fruta.cs" />
+     <Compile Include="Assets\Scripts\menu.cs" />
+     <None Include="Assets\Plugins\FingerGestures\Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{5CA0865C-ECE3-72C2-C9E7-841B0B7CD506}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

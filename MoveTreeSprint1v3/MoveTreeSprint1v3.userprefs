@@ -1,13 +1,18 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FrutaVerde.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Jugar.cs">
     <Files>
-      <File FileName="MoveTreeSprint1v3.sln" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\fruta.cs" Line="35" Column="1" />
-      <File FileName="Assets\Scripts\GenerarFruta.cs" Line="28" Column="44" />
-      <File FileName="Assets\Scripts\fruta.cs" Line="21" Column="6" />
-      <File FileName="Assets\Scripts\FrutaDañada.cs" Line="19" Column="5" />
-      <File FileName="Assets\Scripts\FrutaVerde.cs" Line="20" Column="5" />
+      <File FileName="Assets\Scripts\menu.cs" Line="27" Column="36" />
+      <File FileName="Assets\Scripts\Splash.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\fruta.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GenerarFruta.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Puntuacion.cs" Line="26" Column="10" />
+      <File FileName="Assets\Scripts\Regresar.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Etapas.cs" Line="16" Column="1" />
+      <File FileName="Assets\Scripts\NivelesNaranjas.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Jugar.cs" Line="17" Column="24" />
+      <File FileName="Assets\Scripts\GameOver.cs" Line="24" Column="2" />
+      <File FileName="Assets\Scripts\Temporizador.cs" Line="68" Column="41" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
