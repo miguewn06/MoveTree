@@ -49,7 +49,7 @@ public class Temporizador : MonoBehaviour {
 		while (true) {
 						if (t != 0) {
 				num=efecto;
-				Debug.Log(num);
+
 				yield return new WaitForSeconds(num);
 				Invoke("retornar",5);
 
@@ -65,8 +65,8 @@ public class Temporizador : MonoBehaviour {
 								GameObject[] terminar1 = GameObject.FindGameObjectsWithTag ("Generador");
 								foreach (GameObject obj in terminar1) {
 										UnityEngine.Object.Destroy (obj);
-					yield return new WaitForSeconds(2);
-								NotificationCenter.DefaultCenter().PostNotification(this, "JuegoTerminado");
+					yield return new WaitForSeconds(5);
+								NotificationCenter.DefaultCenter().PostNotification(this, "JuegoTerminado",1);
 								}
 						}
 

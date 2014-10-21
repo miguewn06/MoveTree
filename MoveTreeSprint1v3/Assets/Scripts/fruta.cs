@@ -21,14 +21,10 @@ public class fruta : MonoBehaviour {
 			//			// llamando a "IncrementarPuntaje" y con el valor de la fruta madura.
 			DestroyObject(gameObject);
 				} else {
-			Debug.Log("no ha entrado");
+			//Debug.Log("no ha entrado");
 				}
 	}
 
-	void efectofruta(Notification n){
-		Debug.Log ("cambio de valor");
-		valor = (int)n.data;
-	}
 
 
 

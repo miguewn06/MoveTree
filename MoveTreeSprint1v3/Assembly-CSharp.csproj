@@ -81,6 +81,8 @@
      <Compile Include="Assets\Scripts\Regresar.cs" />
      <Compile Include="Assets\Scripts\Splash.cs" />
      <Compile Include="Assets\Scripts\Temporizador.cs" />
+     <Compile Include="Assets\Scripts\VolverNiveles.cs" />
+     <Compile Include="Assets\Scripts\controlpuntos.cs" />
      <Compile Include="Assets\Scripts\fruta.cs" />
      <Compile Include="Assets\Scripts\menu.cs" />
      <None Include="Assets\Plugins\FingerGestures\Readme.txt" />
