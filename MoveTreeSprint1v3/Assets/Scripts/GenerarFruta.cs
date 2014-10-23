@@ -55,10 +55,10 @@ public class GenerarFruta : MonoBehaviour {
 		magnitud1 = vect.sqrMagnitude;
 		if (vect.sqrMagnitude > 1.8 && !inicio) {
 			magnitud = vect.sqrMagnitude;
-			//Generar ();
+
 			//StartCoroutine (Generar (posAnteriorGenerador));
 			inicio = true;
-			//Shake();
+			Shake();
 		}
 		if(!isShaking)
 			
@@ -133,8 +133,11 @@ public class GenerarFruta : MonoBehaviour {
 				objIndividual.rigidbody2D.gravityScale = 1;        //vuelve a la veloc normal si no hay veneno
 				
 			}
-			//else if(tipoVeneno ==2){
-			//}
+			else if(tipoVeneno ==2){
+
+				objIndividual = obj[2];
+				Invoke ("contador", 5);
+			}
 			//------------------------------------------------------------------------------------------
 			
 			

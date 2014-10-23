@@ -1,7 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(TapGesture))]
+[RequireComponent( typeof( FingerDownDetector ) )]
 public class FrutaVenenosa : MonoBehaviour {
+
+	public GameObject fingerDownObject;
 
 	// Use this for initialization
 	void Start () {
@@ -13,7 +17,9 @@ public class FrutaVenenosa : MonoBehaviour {
 	
 	}
 
-	void OnMouseDown(){//Esta funcion se llama cuando el usuario ha presionado el collider del objeto.
+	void OnFingerDown( FingerDownEvent e )
+	{
+		if (e.Selection == fingerDownObject) {
 
 		int veneno;
 
@@ -23,5 +29,6 @@ public class FrutaVenenosa : MonoBehaviour {
 		// llamando a "IncrementarPuntaje" y con el valor de la fruta madura.
 		DestroyObject (gameObject);//destruye el objeto.
 
+	}
 	}
 }
