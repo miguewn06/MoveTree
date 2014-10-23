@@ -10,6 +10,7 @@ public class Temporizador : MonoBehaviour {
 	public int t=10;//valor entero de referencia. Solamente interesa que sea distinto de cero.
 	public bool inicio = false;
 	private int efecto=1;
+	public bool accionEvento = false;
 
 
 
@@ -55,10 +56,14 @@ public class Temporizador : MonoBehaviour {
 
 
 
-								tiempomaximo = tiempomaximo - 1;
-								t = Mathf.RoundToInt (tiempomaximo);
-								tiempo.text = t.ToString ();
+				tiempomaximo = tiempomaximo - 1;
+				t = Mathf.RoundToInt (tiempomaximo);
+				tiempo.text = t.ToString ();
 
+				if (t == 20){
+					accionEvento = true;
+					NotificationCenter.DefaultCenter().PostNotification(this, "accionarEvento",accionEvento);
+				}
 
 				
 			} else if (t == 0) {
