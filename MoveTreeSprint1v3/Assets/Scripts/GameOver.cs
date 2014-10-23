@@ -16,9 +16,16 @@ public class GameOver : MonoBehaviour {
 	
 	}
 
-	void JuegoTerminado(){
-		camaraGameObject.SetActive (true);
-		totalpuntos.text = puntos.puntaje.ToString ();
+	void JuegoTerminado(Notification n){
+		int control = (int)n.data;
+		if(control==1){
+			camaraGameObject.SetActive (true);
+			totalpuntos.text = puntos.puntaje.ToString ();
+		}
+		else if(control==2){
+			camaraGameObject.SetActive(false);
+		}
+
 	}
 
 

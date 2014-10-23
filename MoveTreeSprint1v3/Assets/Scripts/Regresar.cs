@@ -22,9 +22,7 @@ public class Regresar : MonoBehaviour {
 			else if(gesture.Selection.name == "Volver etapa"){
 				Application.LoadLevel("Etapas");
 			}
-			else if(gesture.Selection.name == "Volver niveles"){
-				Application.LoadLevel("Niveles etapa1");
-			}
+		
 		}
 	}
 }

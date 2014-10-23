@@ -1,10 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-
-public class Jugar : MonoBehaviour {
-
-
+public class VolverNiveles : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -16,11 +13,9 @@ public class Jugar : MonoBehaviour {
 	
 	}
 
-
-
 	void OnMouseDown(){
-		NotificationCenter.DefaultCenter ().PostNotification (this, "JuegoTerminado",2);
-		Application.LoadLevel ("Nivel1");
 
-	}
+		Application.LoadLevel("Niveles etapa1");
+		}
+
 }
